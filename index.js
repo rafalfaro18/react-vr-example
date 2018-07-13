@@ -7,12 +7,28 @@ import {
 } from 'react-360';
 
 export default class Hello360 extends React.Component {
+  // Our component will keep track of this state
+  state = {
+    count: 0,
+  };
+
+  // This method increments our count, triggering a re-render
+  _incrementCount = () => {
+    this.setState({count: this.state.count + 1});
+  };
+
+  // Once the component mounts, run the increment method every second
+  componentDidMount() {
+    setInterval(this._incrementCount, 1000);
+  }
+
   render() {
+    // Reference the count in our UI
     return (
       <View style={styles.panel}>
         <View style={styles.greetingBox}>
           <Text style={styles.greeting}>
-            Welcome to React VR Example Project
+            {`Count: ${this.state.count}`}
           </Text>
         </View>
       </View>
