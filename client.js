@@ -11,7 +11,7 @@ function init(bundle, parent, options = {}) {
     ...options,
   });
   // Create a location two meters in front of the user, and one meter down
-  const location = new Location([0, -1, -4]);
+  const location = new Location([0, -3, -8]);
 
   // Render to this location
   r360.renderToLocation(
