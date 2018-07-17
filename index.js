@@ -15,7 +15,7 @@ export default class React3DView extends React.Component {
   render() {
     return (
       <View>
-        <AmbientLight intensity={0.5} />
+        <AmbientLight intensity={5} />
         <PointLight
           style={{
             color: 'white',
