@@ -7,7 +7,10 @@ import {
   VrButton,
 } from 'react-360';
 
-export default class Hello360 extends React.Component {
+import Entity from 'Entity';
+import AmbientLight from 'AmbientLight';
+
+export default class React3DView extends React.Component {
   // Our component will keep track of this state
   state = {
     count: 0,
@@ -20,14 +23,8 @@ export default class Hello360 extends React.Component {
 
   render() {
     return (
-      <View style={styles.panel}>
-        <VrButton
-          onClick={this._incrementCount}
-          style={styles.greetingBox}>
-          <Text style={styles.greeting}>
-            {`Count: ${this.state.count}`}
-          </Text>
-        </VrButton>
+      <View>
+        <Text>Hola</Text>
       </View>
     );
   }
@@ -53,4 +50,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Hello360', () => Hello360);
+AppRegistry.registerComponent('React3DView', () => React3DView);
