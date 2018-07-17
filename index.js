@@ -26,6 +26,7 @@ export default class React3DView extends React.Component {
         />
         <Entity
         source={{ obj: asset('cilinder.obj'),
+        mtl: asset('cilinder.mtl'),
         }}
 
         lit={true}
