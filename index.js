@@ -24,7 +24,6 @@ export default class React3DView extends React.Component {
           obj: asset('creature.obj'),
           mtl: asset('creature.mtl'),
         }}
-        texture={asset('abstract-art-background-207300.jpg')}
         lit={true}
         style={{
           transform: [
