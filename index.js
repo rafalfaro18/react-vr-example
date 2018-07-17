@@ -32,7 +32,6 @@ export default class React3DView extends React.Component {
         style={{
           transform: [
             {translate: [-4, 0, 0]},
-            {scaleX:-1}
           ]
         }}
         />
