@@ -3,6 +3,14 @@ illum 4
 Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd abstract-art-background-207300.jpg
+map_Kd -s 1.50 1.50 abstract-art-background-207300.jpg
 Ni 1.86
+Ks 0.50 0.50 0.50
+newmtl blinn2SG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s 1 1 abstract-art-background-207300.jpg
+Ni 1.00
 Ks 0.50 0.50 0.50
