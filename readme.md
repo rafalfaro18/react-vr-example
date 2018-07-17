@@ -8,5 +8,5 @@ https://react-360-demo.herokuapp.com/
 
 - Run:
 ```sh
-npm start
+npm run build && npm start
 ```
