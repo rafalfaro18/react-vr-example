@@ -17,7 +17,7 @@ export default class React3DView extends React.Component {
   render() {
     return (
       <View>
-        <AmbientLight intensity={0.6} />
+        <AmbientLight intensity={0.3} />
         <PointLight style={{color: 'white', transform: [{translate: [0, 400, 700]}]}} />
         <Entity
         source={{
@@ -31,6 +31,19 @@ export default class React3DView extends React.Component {
             {scale: 0.1},
             {rotateY: 0},
             {rotateX: -90},
+          ],
+        }}
+        />
+        <Entity
+        source={{
+          obj: asset('cilinder.obj'),
+          mtl: asset('cilinder.mtl'),
+        }}
+        lit={true}
+        style={{
+          transform: [
+            {translate: [80, -20, -140]},
+            {scale: 10},
           ],
         }}
         />

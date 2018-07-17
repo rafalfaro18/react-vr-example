@@ -1,7 +1,10 @@
 newmtl blinn1SG
 illum 4
-Kd 0.00 1.00 0.00
+Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd abstract-art-background-207300.jpg
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ka  0.4 0.4 0.2
+Kd  0.4 0.4 0.2
+Ks  0.9 0.9 0.9
