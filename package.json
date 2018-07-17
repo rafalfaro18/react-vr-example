@@ -9,14 +9,15 @@
     "devtools": "react-devtools",
     "test": "jest",
     "build": "rm -fr build && npm run bundle && rm -fr build/static_assets/ && cp -r static_assets/ build/static_assets",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build && node build-server.js"
   },
   "dependencies": {
+    "node-static": "^0.7.10",
     "react": "16.0.0",
-    "react-native": "~0.49.5",
-    "three": "^0.87.0",
     "react-360": "~1.0.0",
-    "react-360-web": "~1.0.0"
+    "react-360-web": "~1.0.0",
+    "react-native": "~0.49.5",
+    "three": "^0.87.0"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
