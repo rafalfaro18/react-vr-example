@@ -1,7 +1,7 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
-mtllib ./cilinder.mtl
-g
+mtllib cilinder.mtl
+g default
 v 0.951057 -1.000000 -0.309017
 v 0.809018 -1.000000 -0.587786
 v 0.587786 -1.000000 -0.809017
