@@ -8,7 +8,8 @@
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest",
-    "postinstall": "npm start"
+    "build": "rm -fr build && npm run bundle && rm -fr build/static_assets/ && cp -r static_assets/ build/static_assets",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "react": "16.0.0",
