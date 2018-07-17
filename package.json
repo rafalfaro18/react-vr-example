@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "npm run build && node build-server.js",
+    "start": "node build-server.js",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest",
-    "build": "rm -fr build && npm run bundle && rm -fr build/static_assets/ && cp -r static_assets/ build/static_assets"
+    "build": "rm -fr build && npm run bundle && rm -fr build/static_assets/ && cp -r static_assets/ build/static_assets",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "node-static": "^0.7.10",
