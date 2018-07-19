@@ -46,6 +46,18 @@ export default class React3DView extends React.Component {
           ],
         }}
         />
+        <Entity
+        source={{
+          obj: asset('pyramid.obj'),
+          mtl: asset('pyramid.mtl'),
+        }}
+        lit={true}
+        style={{
+          transform: [
+            {translate: [50, -50, 400]},
+          ],
+        }}
+        />
       </View>
     );
   }

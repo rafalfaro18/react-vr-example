@@ -1,0 +1,8 @@
+newmtl blinn1SG
+illum 1
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd -s 1.25 1.25 color-concrete-design-122458.jpg
+Ni 1.00
+Ks 0.50 0.50 0.50
